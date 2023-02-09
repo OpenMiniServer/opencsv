@@ -1,8 +1,10 @@
 # opencsv
-Read and write csv file.
+使用C++分析大数据的时候，数据按CSV格式导出，可以用Excel分析数据。
+OpenCSV非常易用和简单。
+## 测试例子：
 
-## Test Demo
 ```C++
+
 #include <assert.h>
 #include "opencsv.h"
 
@@ -69,16 +71,17 @@ int main()
 
     return 0;
 }
+
 ```
-## Environment
-Windows、linux etc. Cross-platform design
 
-## Source file list
-. src/opencsv.h 
-. src/opencsv.cpp 
+## 跨平台支持
+Windows、linux等跨平台设计
 
-## Build and run
+## 源文件列表
+src/opencsv.h
+src/opencsv.cpp
 
+## 编译和执行
 ```
 cd ./opencsv
 mkdir build

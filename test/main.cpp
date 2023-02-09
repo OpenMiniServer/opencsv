@@ -1,8 +1,3 @@
-# opencsv
-Super easy to use
-
-```C++
-
 #include <assert.h>
 #include "opencsv.h"
 
@@ -69,23 +64,3 @@ int main()
 
     return 0;
 }
-
-```
-
-## build and run
-####Environment：
-Windows、linux
-
-###Source file list:
-src/opencsv.h 
-src/opencsv.cpp 
-
-
-```
-cd ./opencsv
-mkdir build
-cd build
-cmake ..
-make
-./test
-```

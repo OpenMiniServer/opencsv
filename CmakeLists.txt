@@ -1,0 +1,11 @@
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.12.1)
+PROJECT(opencsv)
+
+include_directories(src)
+
+add_executable(test 
+	src/opencsv.h 
+	src/opencsv.cpp 
+	test/main.cpp
+)

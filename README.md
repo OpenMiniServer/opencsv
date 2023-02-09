@@ -1,5 +1,5 @@
 # opencsv
-Super easy to use
+Read and write csv file.
 
 ```C++
 

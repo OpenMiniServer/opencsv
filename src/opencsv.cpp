@@ -156,7 +156,12 @@ static bool CheckFilePath(const std::string& filePath)
 
 static int64_t ReadFile(const std::string& filePath, std::string& buffer, const char* m)
 {
-    FILE* f = fopen(filePath.c_str(), m);
+    FILE* f = 0;
+#ifdef _MSC_VER
+    fopen_s(&f, filePath.c_str(), m);
+#else
+    f = fopen(filePath.c_str(), m);
+#endif
     if (!f) return -1;
     fseek(f, 0, SEEK_END);
     long len = ftell(f);
@@ -169,7 +174,12 @@ static int64_t ReadFile(const std::string& filePath, std::string& buffer, const 
 
 static int64_t WriteFile(const std::string& filePath, std::string& buffer, const char* m)
 {
-    FILE* f = fopen(filePath.c_str(), m);
+    FILE* f = 0;
+#ifdef _MSC_VER
+    fopen_s(&f, filePath.c_str(), m);
+#else
+    f = fopen(filePath.c_str(), m);
+#endif
     if (!f) return -1;
     size_t ret = fwrite((void*)buffer.data(), 1, buffer.size(), f);
     fclose(f);

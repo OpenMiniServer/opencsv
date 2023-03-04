@@ -1,6 +1,7 @@
 # 简单易用的OpenCSV使用教程
 
 原文：https://mp.weixin.qq.com/s/LyC85wJ-HBgp8otL1qtCZg
+跨平台多线程设计！
 使用C++分析大数据的时候，数据按CSV格式导出，可以用Excel分析数据。
 OpenCSV非常简单易用。
 

@@ -2,6 +2,34 @@
 Cross-platform multi-threaded design!
 Read and write csv file.
 
+**The OpenLinyou project designs a cross-platform server framework. Write code in VS or XCode and run it on Linux without any changes, even on Android and iOS.**
+OpenLinyou：https://github.com/openlinyou
+
+## Cross-platform support 
+Designed for cross-platforms such as Windows and Linux.
+
+## Compilation and execution
+Please install the cmake tool and use it to build the project. It can be compiled and run on VS or Xcode. 
+
+Source code: https://github.com/openlinyou/opencsv
+```
+# Clone the project
+git clone https://github.com/openlinyou/openthread
+cd ./opencsv
+# Create a build project directory
+mkdir build
+cd build
+# If it is win32, opencsv.sln will appear in this directory. Click it to start VS for coding and debugging.
+cmake ..
+make
+./test
+```
+
+## All source files
++ src/opencsv.h
++ src/opencsv.cpp
+
+
 ## Test Demo
 ```C++
 #include <assert.h>

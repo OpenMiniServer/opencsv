@@ -1,23 +1,32 @@
 # 简单易用的OpenCSV使用教程
 
-原文：https://mp.weixin.qq.com/s/LyC85wJ-HBgp8otL1qtCZg
 跨平台多线程设计！
 使用C++分析大数据的时候，数据按CSV格式导出，可以用Excel分析数据。
 OpenCSV非常简单易用。
 
+**OpenLinyou项目设计跨平台服务器框架，在VS或者XCode上写代码，无需任何改动就可以编译运行在Linux上，甚至是安卓和iOS.**
+OpenLinyou：https://github.com/openlinyou
+
 ## 跨平台支持
-Windows、linux等跨平台设计
+Windows、linux、Mac、iOS、Android等跨平台设计
 
 ## 编译和执行
+请安装cmake工具，用cmake可以构建出VS或者XCode工程，就可以在vs或者xcode上编译运行。
 源代码：https://github.com/openlinyou/opencsv
 ```
+git clone https://github.com/openlinyou/opencsv
 cd ./opencsv
 mkdir build
 cd build
 cmake ..
+#如果是win32，在该目录出现opencsv.sln，点击它就可以启动vs写代码调试
 make
 ./test
 ```
+
+## 全部源文件
++ src/opencsv.h
++ src/opencsv.cpp
 
 ## 1.生成csv
 ```C++

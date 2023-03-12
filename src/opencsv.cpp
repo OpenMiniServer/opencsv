@@ -13,6 +13,8 @@
 #include <string>
 #include <vector>
 
+namespace open
+{
 static bool CheckFilePath(const std::string& filePath);
 static int64_t ReadFile(const std::string& filePath, std::string& buffer, const char* m);
 static int64_t WriteFile(const std::string& filePath, std::string& buffer, const char* m);
@@ -184,4 +186,6 @@ static int64_t WriteFile(const std::string& filePath, std::string& buffer, const
     size_t ret = fwrite((void*)buffer.data(), 1, buffer.size(), f);
     fclose(f);
     return ret == 0 ? -1 : buffer.size();
+}
+
 }

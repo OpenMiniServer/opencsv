@@ -12,6 +12,8 @@
 #include <string>
 #include <vector>
 
+namespace open
+{
 class OpenCSV
 {
     typedef std::vector<std::string> Line;
@@ -61,6 +63,8 @@ public:
     void operator<<(const std::string& output);
 
     inline std::vector<CSVLine>& lines() { return lines_; }
+};
+
 };
 
 #endif /* HEADER_OPEN_CSV_H */

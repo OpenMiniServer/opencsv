@@ -1,6 +1,8 @@
 #include <assert.h>
 #include "opencsv.h"
 
+using namespace open;
+
 int main()
 {
     std::string buffer1;
